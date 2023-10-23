@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jyuxe7o1nf2t"
-path="res://.godot/imported/all-bg.png-25471c02a907916d78112067c5bc8543.ctex"
+uid="uid://dnte17wf1gds2"
+path="res://.godot/imported/rock-1.png-ff35b4ec7592c2072e01416bec7b2a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sunny Land houses /Sunny Land Trees Props Pack /previews/all-bg.png"
-dest_files=["res://.godot/imported/all-bg.png-25471c02a907916d78112067c5bc8543.ctex"]
+source_file="res://Sunny Land houses/Sunny Land Trees Props Pack/Props PNG/rock-1.png"
+dest_files=["res://.godot/imported/rock-1.png-ff35b4ec7592c2072e01416bec7b2a88.ctex"]
 
 [params]
 

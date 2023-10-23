@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://bg.gd" id="1_i72o4"]
 [ext_resource type="Texture2D" uid="uid://jgdn76dpvqr0" path="res://sunny-land-phaser-project/sunny-land/assets/environment/back.png" id="1_kexey"]
 [ext_resource type="Texture2D" uid="uid://bxalvyu7mha5m" path="res://sunny-land-phaser-project/sunny-land/assets/environment/middle.png" id="2_tsuf2"]
-[ext_resource type="Texture2D" uid="uid://capltsi3hbdpw" path="res://Sunny Land houses /Sunny Land Trees Props Pack /Props PNG/tree-house.png" id="3_nrhw1"]
-[ext_resource type="Texture2D" uid="uid://bcpaocras368a" path="res://Sunny Land houses /Sunny Land Trees Props Pack /Props PNG/plant-house.png" id="4_w8btb"]
-[ext_resource type="Texture2D" uid="uid://c4cjhnjcctpuj" path="res://Sunny Land houses /Sunny Land Trees Props Pack /Props PNG/rock-2.png" id="5_m6ys3"]
-[ext_resource type="Texture2D" uid="uid://dnte17wf1gds2" path="res://Sunny Land houses /Sunny Land Trees Props Pack /Props PNG/rock-1.png" id="6_iukfs"]
+[ext_resource type="Texture2D" uid="uid://capltsi3hbdpw" path="res://Sunny Land houses/Sunny Land Trees Props Pack/Props PNG/tree-house.png" id="3_yevpg"]
+[ext_resource type="Texture2D" uid="uid://bcpaocras368a" path="res://Sunny Land houses/Sunny Land Trees Props Pack/Props PNG/plant-house.png" id="4_jb6so"]
+[ext_resource type="Texture2D" uid="uid://c4cjhnjcctpuj" path="res://Sunny Land houses/Sunny Land Trees Props Pack/Props PNG/rock-2.png" id="5_vn5r4"]
+[ext_resource type="Texture2D" uid="uid://dnte17wf1gds2" path="res://Sunny Land houses/Sunny Land Trees Props Pack/Props PNG/rock-1.png" id="6_nlsqe"]
 
 [node name="bg" type="ParallaxBackground"]
 script = ExtResource("1_i72o4")
@@ -25,23 +25,23 @@ motion_mirroring = Vector2(1220, 0)
 
 [node name="Tree-house" type="Sprite2D" parent="houses"]
 position = Vector2(737, 308)
-texture = ExtResource("3_nrhw1")
+texture = ExtResource("3_yevpg")
 
 [node name="Plant-house" type="Sprite2D" parent="houses"]
 position = Vector2(1027, 348)
-texture = ExtResource("4_w8btb")
+texture = ExtResource("4_jb6so")
 
 [node name="Rock-2" type="Sprite2D" parent="houses"]
 position = Vector2(882, 371)
-texture = ExtResource("5_m6ys3")
+texture = ExtResource("5_vn5r4")
 
 [node name="Rock-3" type="Sprite2D" parent="houses"]
 position = Vector2(1608, 354)
-texture = ExtResource("5_m6ys3")
+texture = ExtResource("5_vn5r4")
 
 [node name="Rock-1" type="Sprite2D" parent="houses"]
 position = Vector2(2101, 357)
-texture = ExtResource("6_iukfs")
+texture = ExtResource("6_nlsqe")
 
 [node name="bushes" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.7, 0.7)
