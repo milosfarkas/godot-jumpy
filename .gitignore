@@ -3,3 +3,5 @@
 
 # Pycharm specific ignores
 .idea/
+
+/android/*
