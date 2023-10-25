@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6uobtxifmflf"]
+[gd_scene load_steps=4 format=3 uid="uid://b6uobtxifmflf"]
 
+[ext_resource type="Script" path="res://android_ui.gd" id="1_3qc3c"]
 [ext_resource type="Texture2D" uid="uid://bbfo3gguhkktr" path="res://images/arrow-right.png" id="1_6ncmv"]
+[ext_resource type="Texture2D" uid="uid://02drkvvnxof5" path="res://images/arrow-right-w.png" id="2_hj5ry"]
 
 [node name="AndroidUI" type="CanvasLayer"]
+script = ExtResource("1_3qc3c")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchors_preset = 2
@@ -10,19 +13,21 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 grow_vertical = 0
 
-[node name="TouchScreenButtonLeft" type="TouchScreenButton" parent="HBoxContainer"]
-modulate = Color(1, 1, 1, 0.501961)
+[node name="ButtonLeft" type="TouchScreenButton" parent="HBoxContainer"]
+modulate = Color(1, 1, 1, 0.376471)
 position = Vector2(180, -28)
 rotation = 3.14159
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("1_6ncmv")
+texture_pressed = ExtResource("2_hj5ry")
 action = "ui_left"
 
-[node name="TouchScreenButtonRight" type="TouchScreenButton" parent="HBoxContainer"]
-modulate = Color(1, 1, 1, 0.501961)
+[node name="ButtonRight" type="TouchScreenButton" parent="HBoxContainer"]
+modulate = Color(1, 1, 1, 0.376471)
 position = Vector2(200, -188)
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("1_6ncmv")
+texture_pressed = ExtResource("2_hj5ry")
 action = "ui_right"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
@@ -36,10 +41,11 @@ offset_top = -40.0
 grow_horizontal = 0
 grow_vertical = 0
 
-[node name="TouchScreenButtonUp" type="TouchScreenButton" parent="HBoxContainer2"]
-modulate = Color(1, 1, 1, 0.501961)
+[node name="ButtonUp" type="TouchScreenButton" parent="HBoxContainer2"]
+modulate = Color(1, 1, 1, 0.376471)
 position = Vector2(-160, 0)
 rotation = -1.5708
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("1_6ncmv")
+texture_pressed = ExtResource("2_hj5ry")
 action = "ui_accept"

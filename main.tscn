@@ -7,15 +7,19 @@
 script = ExtResource("1_unmu5")
 
 [node name="CenterContainer" type="VBoxContainer" parent="."]
-offset_right = 160.0
+offset_right = 240.0
 offset_bottom = 240.0
 
 [node name="play" type="Button" parent="CenterContainer"]
 layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
 text = "play"
 
 [node name="quit" type="Button" parent="CenterContainer"]
 layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
 text = "quit"
 
 [node name="bg" parent="." instance=ExtResource("2_ph5ki")]

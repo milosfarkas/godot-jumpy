@@ -5,3 +5,6 @@
 .idea/
 
 /android/*
+
+*.apk
+*.idsig

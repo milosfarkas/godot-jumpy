@@ -36,7 +36,6 @@ func _on_player_detection_body_exited(body):
 		chase = false
 
 func death(goldAmount: int):
-	print("death")
 	Game.incGold(goldAmount)
 	Utils.save_game()
 	$AnimatedSprite2D.play("death")
