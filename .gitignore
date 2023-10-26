@@ -3,3 +3,9 @@
 
 # Pycharm specific ignores
 .idea/
+
+/android/*
+
+*.apk
+*.idsig
+savegame.bin

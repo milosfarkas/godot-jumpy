@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://t8ijfve63xdu"]
+[gd_scene load_steps=14 format=3 uid="uid://t8ijfve63xdu"]
 
 [ext_resource type="Script" path="res://bg.gd" id="1_hkhs7"]
 [ext_resource type="Texture2D" uid="uid://dlx6j73j7etcu" path="res://sunny-land-phaser-project/sunny-land/assets/environment/tileset.png" id="1_jkxj2"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bhh4y6gtvxff8" path="res://frog.tscn" id="5_yakpm"]
 [ext_resource type="Script" path="res://hp.gd" id="6_y8jaf"]
 [ext_resource type="Script" path="res://collectables.gd" id="7_6byoj"]
+[ext_resource type="PackedScene" uid="uid://b6uobtxifmflf" path="res://android_ui.tscn" id="9_p24of"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pdvec"]
 texture = ExtResource("1_jkxj2")
@@ -566,7 +567,7 @@ offset_bottom = 1610.0
 position = Vector2(428, 384)
 
 [node name="Player" parent="Player" instance=ExtResource("1_s3rxy")]
-position = Vector2(-292, 136)
+position = Vector2(-234, 139)
 
 [node name="Mobs" type="Node2D" parent="."]
 
@@ -629,5 +630,7 @@ script = ExtResource("7_6byoj")
 [node name="Timer" type="Timer" parent="collectables"]
 wait_time = 5.0
 autostart = true
+
+[node name="AndroidUI" parent="." instance=ExtResource("9_p24of")]
 
 [connection signal="timeout" from="collectables/Timer" to="collectables" method="_on_timer_timeout"]
